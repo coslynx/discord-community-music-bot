@@ -1,0 +1,39 @@
+{
+  "name": "discord-community-music-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that enhances community engagement by streaming music collaboratively.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "discord",
+    "music",
+    "bot",
+    "community",
+    "streaming"
+  ],
+  "author": "Drix10",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "discord.js": "^14.x",
+    "express": "^4.x",
+    "mongoose": "^6.x",
+    "axios": "^0.21.x",
+    "dotenv": "^10.x",
+    "ytdl-core": "^4.x",
+    "@discordjs/opus": "^0.5.x",
+    "@discordjs/rest": "^1.x",
+    "spotify-web-api-node": "^5.x",
+    "lastfmapi": "^2.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.x",
+    "jest": "^27.x",
+    "eslint": "^8.x",
+    "prettier": "^2.x"
+  },
+  "private": true
+}
