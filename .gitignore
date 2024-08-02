@@ -1,0 +1,25 @@
+# .gitignore
+
+node_modules/
+.env
+package-lock.json
+npm-debug.log
+dist/
+build/
+coverage/
+.log
+.DS_Store
+.env.local
+.env..local
+.tgz
+.vscode/
+.idea/
+.sublime-workspace
+.sublime-project
+.bak
+.tmp
+.swp
+.orig
+.lock
+/tests/                                                                                                                                                                                                                                
+.tgz
