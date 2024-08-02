@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Music Bot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #0072ff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .commands {
+      width: 80%;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .command {
+      background: #f9f9f9;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .command:hover {
+      background: #e3f2fd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Discord Music Bot Commands</h1>
+  <div class="commands">
+    <div class="command">
+      <strong>!play {song}</strong>
+      <p>Plays the specified song from YouTube or Spotify.</p>
+    </div>
+    <div class="command">
+      <strong>!pause</strong>
+      <p>Pauses the currently playing song.</p>
+    </div>
+    <div class="command">
+      <strong>!skip</strong>
+      <p>Skips the current song in the queue.</p>
+    </div>
+    <div class="command">
+      <strong>!stop</strong>
+      <p>Stops the music and clears the queue.</p>
+    </div>
+    <div class="command">
+      <strong>!queue</strong>
+      <p>Displays the current song queue.</p>
+    </div>
+    <div class="command">
+      <strong>!volume {level}</strong>
+      <p>Sets the volume of the music playback.</p>
+    </div>
+    <div class="command">
+      <strong>!help</strong>
+      <p>Displays a list of available commands and their descriptions.</p>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      M.toast({html: 'Welcome to the Discord Music Bot! Use the commands to control music playback.'});
+    });
+  </script>
+
+</body>
+</html>
